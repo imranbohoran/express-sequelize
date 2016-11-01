@@ -1,0 +1,21 @@
+{
+  "development": {
+    "dialect": "sqlite",
+    "storage": "./db.development-1.sqlite"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": ":memory:"
+  },
+  "production": {
+    "username": "express_sandbox_user",
+    "password": "supersecret",
+    "database": "express_sandbox",
+    "host": "dockerhost",
+    "dialect": "postgres",
+    "port":5432,
+    "dialectOptions": {
+      "ssl": false
+    }
+  }
+}
